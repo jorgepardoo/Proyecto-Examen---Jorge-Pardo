@@ -15,7 +15,12 @@ public class CuentaBancaria {
 		prestamo = 0;
 		tienePrestamo = false;
 	}
-
+	/**
+	 * La funcion agregar Saldo recibe una variable que es cantidad que es double y acontinuacion,
+	 * lo primero que hace es comprobar que el prestamos es mayor a 0 y si lo es le resta al prestamo
+	 * la cantidad y luego de realizar esto vuelve a commprobar que el prestamo es menor que 0 y si es
+	 * correcto se llama a la funcion obtener saldo y pone a la variable prestamo un valor de 0 y a tiene
+	 * prestamos como valor false.*/
 	public void agregarSaldo(double cantidad) {
 		if (prestamo > 0) {
 			prestamo -= cantidad;
